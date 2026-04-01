@@ -9,7 +9,7 @@
 local TARGET_DIR: string = "/storage/emulated/0/Delta/Autoexecute/"
 local TARGET_FILE: string = TARGET_DIR .. "loader.lua"
 
-local SOURCE_URL: string = "https://raw.githubusercontent.com/marcouriel776-crypto/script_roblox_proteccion_experimental/main/loader.lua"
+local SOURCE_URL: string = "https://github.com/marcouriel776-crypto/versi-n.luau/blob/main/loader_v4.luau"
 
 -- NOTA: Este instalador busca instalar loader.lua (versión Lua clásica)
 -- Si quieres que instale la versión Luau, cambia TARGET_FILE a "loader.luau"
