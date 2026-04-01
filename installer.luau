@@ -7,7 +7,7 @@
 -- =========================
 
 local TARGET_DIR: string = "/storage/emulated/0/Delta/Autoexecute/"
-local TARGET_FILE: string = TARGET_DIR .. "loader.lua"
+local TARGET_FILE: string = TARGET_DIR .. "loader_v4.luau"
 
 local SOURCE_URL: string = "https://github.com/marcouriel776-crypto/versi-n.luau/blob/main/loader_v4.luau"
 
