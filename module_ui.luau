@@ -605,12 +605,15 @@ end
 
 -- Créditos en consola (solo una vez)
 pcall(function(): nil
-print("==========================================")
-print("UPF Protection Framework")
-print("Author: Mark (Sourcerer)")
-print("Co-Developer: Lumo (AI Assistant from Proton)")
-print("Language: Luau (Typed)")
-print("Repository: script_roblox_proteccion_experimental")
-print("==========================================")
+    print(" ")
+    print("==========================================")
+    print("UPF Protection Framework")
+    print("Author: Mark (Sourcerer)")
+    print("Co-Developer: Lumo (AI Assistant from Proton)")
+    print("Language: Luau (Typed)")
+    print("Repository: script_roblox_proteccion_experimental")
+    print("==========================================")
+    print(" ")
+end)
 
 print("✅ UI module loaded and connected to UPF (Luau typed)")
