@@ -154,3 +154,39 @@ local function checkStuck(): nil
             if now - RES.lastMoveTick >= RES.stuckTime then
                 -- Evitar spam infinito
                 if now - RES.lastStuckTrigger >= RES.stuckCooldown then
+                     RES.lastStuckTrigger = now
+                    print("[resilience] Player appears stuck → recovering")
+                    localRecover()
+                end
+
+                RES.lastMoveTick = now
+            end
+        end
+    else
+        RES.lastMoveTick = tick()
+    end
+
+    RES.lastPos = pos
+end
+
+-- =========================
+-- CONNECTION CLEAN
+-- =========================
+
+UPF.Connections = UPF.Connections or {}
+
+if UPF.Connections.Resilience then
+    pcall(function(): nil
+        local oldConn: RBXScriptConnection? = UPF.Connections.Resilience :: RBXScriptConnection?
+        if oldConn and oldConn.Disconnect then
+            oldConn:Disconnect()
+        end
+    end)
+    UPF.Connections.Resilience = nil
+end
+
+UPF.Connections.Resilience = RunService.Heartbeat:Connect(function(): nil
+    pcall(checkStuck)
+end)
+
+print("✅ module_resilience FINAL PRO loaded (Luau typed)")
