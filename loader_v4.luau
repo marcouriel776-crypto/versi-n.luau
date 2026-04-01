@@ -1,6 +1,6 @@
 -- loader_v4.luau (FINAL LIMPIO - EXECUTOR)
 
-local BASE_URL = "https://raw.githubusercontent.com/marcouriel776-crypto/script_roblox_proteccion_experimental/main/"
+local BASE_URL = "https://github.com/marcouriel776-crypto/versi-n.luau/tree/main"
 
 local MODULES = {
     "module_settings.lua",
